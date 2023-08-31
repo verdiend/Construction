@@ -1,0 +1,64 @@
+* {
+  overflow-x: hidden !important;
+  overflow: -moz-scrollbars-none !important;
+  scrollbar-width:none !important;
+  -webkit-scrollbar:none;
+}
+.testimonial {
+  background: linear-gradient(rgba(0, 0, 0, 0.3), rgba(0, 0, 0, 0.3)), url('./images/bgTestimonial.jpg');
+  background-position: center;
+  background-size: cover;
+  background-attachment: fixed !important;
+}
+
+.parallax {
+  background: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)), url('./images/bg.jpg');
+  background-size: cover;
+}
+
+.wrapper {
+  height: 100vh;
+  overflow-y: auto !important;
+  overflow-x: hidden !important;
+  perspective: 10px !important;
+}
+header {
+  position: relative;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  height: 100%;
+  transform-style: preserve-3d !important;
+  z-index: -1;
+}
+
+.background {
+  transform: translateZ(-10px) scale(2) !important;
+  
+}
+.foreground {
+  transform: translateZ(-5px);
+}
+
+.atropos-banner div {
+  position: absolute;
+  left: -5%;
+  top: -5%;
+  width: 110%;
+  height: 110%;
+  object-fit: contain;
+  display: block;
+  z-index: 1;
+  transform-style: preserve-3d;
+  pointer-events: none;
+}
+
+.atropos-banner-spacer {
+  position: relative;
+  width: 100%;
+  height: auto;
+  left: 0;
+  top: 0;
+  visibility: hidden;
+}
